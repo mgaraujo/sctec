@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: empreendedorismo
+  datasource:
+    url: jdbc:h2:file:./data/empreendedorismodb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
